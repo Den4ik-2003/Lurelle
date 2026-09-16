@@ -96,10 +96,18 @@ export default function Footer() {
             <span className="online-text">Онлайн: {onlineCount}</span>
           </div>
           <div className="social-icons">
-            <a href="https://instagram.com/athelon.store" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://instagram.com/athelon.store"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={Instagram} alt="Instagram" />
             </a>
-            <a href="https://t.me/athelonstore" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://t.me/athelonstore"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={Telegram} alt="Telegram" />
             </a>
           </div>
@@ -110,14 +118,22 @@ export default function Footer() {
           <ul>
             {categories.map((cat) => (
               <li key={cat}>
-                <button className="footer-nav-btn" onClick={() => handleFilterLink({ type: "category", value: cat })}>
+                <button
+                  className="footer-nav-btn"
+                  onClick={() =>
+                    handleFilterLink({ type: "category", value: cat })
+                  }
+                >
                   <span>{cat}</span>
                   <img src={ChevronIcon} alt="" className="footer-chevron" />
                 </button>
               </li>
             ))}
             <li>
-              <button className="footer-nav-btn footer-link-accent" onClick={() => handleFilterLink({ type: "sort", value: "new" })}>
+              <button
+                className="footer-nav-btn footer-link-accent"
+                onClick={() => handleFilterLink({ type: "sort", value: "new" })}
+              >
                 <span>Новинки</span>
                 <img src={ChevronIcon} alt="" className="footer-chevron" />
               </button>
@@ -130,14 +146,22 @@ export default function Footer() {
           <ul>
             {brands.map((brand) => (
               <li key={brand}>
-                <button className="footer-nav-btn" onClick={() => handleFilterLink({ type: "brand", value: brand })}>
+                <button
+                  className="footer-nav-btn"
+                  onClick={() =>
+                    handleFilterLink({ type: "brand", value: brand })
+                  }
+                >
                   <span>{brand}</span>
                   <img src={ChevronIcon} alt="" className="footer-chevron" />
                 </button>
               </li>
             ))}
             <li>
-              <button className="footer-nav-btn footer-link-accent" onClick={() => handleFilterLink(null)}>
+              <button
+                className="footer-nav-btn footer-link-accent"
+                onClick={() => handleFilterLink(null)}
+              >
                 <span>Всі бренди</span>
                 <img src={ChevronIcon} alt="" className="footer-chevron" />
               </button>
@@ -163,6 +187,16 @@ export default function Footer() {
       <div className="footer-bottom container">
         <p>© {new Date().getFullYear()} Athelon. Всі права захищені.</p>
       </div>
+
+      <a
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          openCookieSettings();
+        }}
+      >
+        Налаштування cookie
+      </a>
     </footer>
   );
 }
