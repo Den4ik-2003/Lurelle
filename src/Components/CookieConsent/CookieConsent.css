@@ -1,4 +1,6 @@
 /* src/Components/CookieConsent/CookieConsent.css */
+/* Використовує змінні та стиль вашого App.css: --color-bg, --color-text,
+   --color-green, --color-btn-hover, шрифт Montserrat, картки як .deal-card */
 
 .cookie-consent-overlay {
   position: fixed;
@@ -7,21 +9,24 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
   padding: 16px;
   box-sizing: border-box;
+  font-family: "Montserrat", "Roboto", sans-serif;
 }
 
 .cookie-consent-box {
   width: 100%;
   max-width: 480px;
-  background: var(--cookie-bg, #1e1e1e);
-  color: var(--cookie-text, #f2f2f2);
-  border-radius: 16px;
+  background-color: #110B0F;
+  color: var(--color-text);
+  border-radius: 10px;
   padding: 24px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
   box-sizing: border-box;
+  -webkit-box-shadow: 1px 2px 20px 3px #000000;
+  box-shadow: 1px 2px 20px 3px #000000;
+  border: 1px solid #222;
   animation: cookie-slide-up 0.3s ease-out;
 }
 
@@ -38,15 +43,16 @@
 
 .cookie-consent-title {
   margin: 0 0 12px;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #fff;
 }
 
 .cookie-consent-text {
   margin: 0 0 20px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--cookie-text-secondary, #c9c9c9);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #bbb;
 }
 
 .cookie-consent-actions {
@@ -58,38 +64,48 @@
 .cookie-btn {
   flex: 1 1 auto;
   min-width: 140px;
-  padding: 11px 16px;
-  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
-  font-size: 14px;
-  font-weight: 500;
+  border-radius: 6px;
   cursor: pointer;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-}
-
-.cookie-btn:hover {
-  opacity: 0.85;
-}
-
-.cookie-btn:active {
-  transform: scale(0.98);
+  transition: all 0.3s;
 }
 
 .cookie-btn-primary {
-  background: var(--cookie-accent, #4f8cff);
-  color: #fff;
+  background-color: var(--color-green);
+  color: #000;
+}
+
+.cookie-btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--color-green);
 }
 
 .cookie-btn-secondary {
   background: transparent;
-  color: var(--cookie-text, #f2f2f2);
-  border: 1px solid var(--cookie-border, #444);
+  color: var(--color-text);
+  border: 1px solid #333;
+}
+
+.cookie-btn-secondary:hover {
+  border-color: var(--color-green);
+  color: var(--color-green);
 }
 
 .cookie-btn-ghost {
   background: transparent;
-  color: var(--cookie-text-secondary, #c9c9c9);
+  color: #999;
   border: 1px solid transparent;
+}
+
+.cookie-btn-ghost:hover {
+  color: #ccc;
+}
+
+.cookie-btn:active {
+  transform: scale(0.97);
 }
 
 /* Категорії у панелі налаштувань */
@@ -99,7 +115,7 @@
   justify-content: space-between;
   gap: 16px;
   padding: 12px 0;
-  border-bottom: 1px solid var(--cookie-border, #333);
+  border-bottom: 1px solid #2a2a2a;
 }
 
 .cookie-category:last-of-type {
@@ -113,13 +129,14 @@
 }
 
 .cookie-category-name {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 600;
+  color: #fff;
 }
 
 .cookie-category-desc {
-  font-size: 12px;
-  color: var(--cookie-text-secondary, #999);
+  font-size: 0.75rem;
+  color: #888;
   line-height: 1.4;
 }
 
@@ -142,7 +159,7 @@
   position: absolute;
   cursor: pointer;
   inset: 0;
-  background-color: #555;
+  background-color: #444;
   border-radius: 24px;
   transition: 0.2s;
 }
@@ -160,7 +177,7 @@
 }
 
 .cookie-switch input:checked + .cookie-switch-slider {
-  background-color: var(--cookie-accent, #4f8cff);
+  background-color: var(--color-green);
 }
 
 .cookie-switch input:checked + .cookie-switch-slider::before {
@@ -168,7 +185,7 @@
 }
 
 .cookie-switch-disabled {
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
@@ -185,32 +202,11 @@
 
   .cookie-consent-box {
     max-width: 100%;
-    border-radius: 16px 16px 0 0;
-    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
   }
 
   .cookie-btn {
     min-width: 100%;
-  }
-}
-
-/* Автопідлаштування під світлу тему, якщо сайт світлий */
-@media (prefers-color-scheme: light) {
-  .cookie-consent-box {
-    background: var(--cookie-bg, #ffffff);
-    color: var(--cookie-text, #1a1a1a);
-  }
-
-  .cookie-consent-text {
-    color: var(--cookie-text-secondary, #555);
-  }
-
-  .cookie-btn-secondary {
-    color: var(--cookie-text, #1a1a1a);
-    border-color: var(--cookie-border, #ddd);
-  }
-
-  .cookie-category {
-    border-bottom-color: var(--cookie-border, #eee);
   }
 }
