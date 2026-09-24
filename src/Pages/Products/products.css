@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 .products-page {
-  --bg: #0e0f0f;
-  --bg-elevated: #161717;
-  --bg-card: #15161699;
-  --bg-card-solid: #161717;
+  --bg: #fff2e0;
+  --bg-elevated: #fff2e0;
+  --bg-card: #fee9cc;
+  --bg-card-solid: #ffdcac;
   --bg-input: #1d1f1e;
   --border: #2a2c2b;
   --border-soft: #232524;
