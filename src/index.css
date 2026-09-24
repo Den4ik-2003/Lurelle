@@ -46,7 +46,6 @@ h5,
 h6 {
   font-weight: 600;
   line-height: 1.2;
-  color: var(--color-text);
   margin-bottom: 0.5rem;
 }
 
