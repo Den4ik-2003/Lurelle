@@ -1,7 +1,8 @@
 .footer {
-  background: #F5EAE0;
+  background: #fff2e0;
   color: #4A3627;
   padding-top: 50px;
+  border-top: 1px solid #E2CFB8;
 }
 
 .footer-nav-btn {
