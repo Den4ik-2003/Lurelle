@@ -1,6 +1,6 @@
 .about-page {
   background: #fff2e0;
-  color: #fff;
+  color: #000;
 }
 
 [data-reveal] {
@@ -129,7 +129,7 @@
 .feature-item__title {
   font-size: 0.98rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin: 0 0 6px;
   line-height: 1.3;
 }
@@ -160,7 +160,7 @@
 .about-mission__text h2 {
   font-size: clamp(1.7rem, 3vw, 2.3rem);
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin: 0 0 18px;
   line-height: 1.25;
 }

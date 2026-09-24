@@ -42,7 +42,7 @@
 .lk-title {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin: 0;
 }
 
@@ -233,7 +233,7 @@
   z-index: 2;
 }
 .pc-out-overlay span {
-  color: #fff;
+  color: #000;
   font-size: 13.5px;
   font-weight: 700;
   background: rgba(0, 0, 0, 0.55);

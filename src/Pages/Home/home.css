@@ -58,7 +58,7 @@
   line-height: 1.05;
   font-weight: 700;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   margin: 0;
 }
 
@@ -116,7 +116,7 @@
   font-size: 1rem;
   font-weight: 600;
   background-color: transparent;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 6px;
@@ -126,7 +126,7 @@
 }
 
 .hero-btn-secondary:hover {
-  border-color: #fff;
+  border-color: #000;
   background-color: rgba(255, 255, 255, 0.06);
 }
 
@@ -158,7 +158,7 @@
 
 .hero-perk strong {
   font-size: 0.85rem;
-  color: #fff;
+  color: #000;
   font-weight: 600;
 }
 
@@ -214,7 +214,7 @@
   padding: 25px;
   border-radius: 12px;
   background: #111;
-  color: #fff;
+  color: #000;
   transition: 0.3s;
 }
 

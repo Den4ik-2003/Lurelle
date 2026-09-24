@@ -23,7 +23,7 @@
   font-size: clamp(2.2rem, 5vw, 3.4rem);
   font-weight: 800;
   line-height: 1.1;
-  color: #fff;
+  color: #000;
   margin: 0 0 12px;
   letter-spacing: -0.02em;
 }
@@ -50,7 +50,7 @@
 .sidebar-heading {
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin-bottom: 16px;
   letter-spacing: 0;
 }
@@ -102,7 +102,7 @@
 .help-title {
   font-size: 0.92rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin: 0 0 6px;
 }
 
@@ -140,7 +140,7 @@
 .form-heading {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin: 0 0 24px;
   letter-spacing: -0.01em;
 }
@@ -307,7 +307,7 @@
 .modal h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #fff;
+  color: #000;
   margin: 0 0 10px;
   letter-spacing: -0.02em;
 }
@@ -324,7 +324,7 @@
   font-size: 0.88rem;
   font-weight: 700;
   background: transparent;
-  color: #fff;
+  color: #000;
   border: 1px solid #333;
   border-radius: 8px;
   cursor: pointer;

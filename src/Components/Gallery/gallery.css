@@ -3,7 +3,7 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background: #fff2e0;
-  color: #fff;
+  color: #000;
   overflow: hidden;
   isolation: isolate;
 }
@@ -80,7 +80,7 @@
   line-height: 1.1;
   margin: 0 0 14px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
 }
 .gallery-headline span {
   color: var(--color-green);

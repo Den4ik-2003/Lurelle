@@ -1,6 +1,6 @@
 .order-page {
   padding-top: 2.5rem;
-  color: #fff;
+  color: #000;
 }
 
 .order-page h2 {
@@ -52,7 +52,7 @@
 .order-block h3 {
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin-bottom: 1rem;
 }
 
@@ -85,7 +85,7 @@
   border-radius: 8px;
   border: 1px solid #333;
   background: #111;
-  color: #fff;
+  color: #000;
   font-size: 0.9rem;
   outline: none;
   transition: border-color 0.2s;
@@ -156,7 +156,7 @@
 
 .order-option-text strong {
   font-size: 0.85rem;
-  color: #fff;
+  color: #000;
   font-weight: 600;
 }
 
@@ -227,7 +227,7 @@
 .order-summary h3 {
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin-bottom: 1rem;
 }
 
@@ -269,7 +269,7 @@
 .order-summary-name {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   margin-bottom: 0.25rem;
   white-space: nowrap;
   overflow: hidden;
@@ -287,7 +287,7 @@
 .order-summary-price {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   white-space: nowrap;
 }
 
