@@ -7,13 +7,13 @@
 .st-card {
   display: flex;
   align-items: stretch;
-  background: #111;
-  border: 1px solid rgba(200, 162, 122, 0.18);
+  background: #FFF8F0;
+  border: 1px solid rgba(138, 90, 50, 0.25);
   border-radius: 20px;
   overflow: hidden;
   box-shadow:
-    0 0 0 1px rgba(200, 162, 122, 0.06),
-    0 32px 80px rgba(0, 0, 0, 0.7);
+    0 0 0 1px rgba(138, 90, 50, 0.08),
+    0 32px 80px rgba(80, 55, 35, 0.25);
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -29,7 +29,7 @@
 .st-left {
   position: relative;
   flex: 0 0 340px;
-  background: linear-gradient(135deg, #0c0c0c 0%, #151515 100%);
+  background: linear-gradient(135deg, #F0E1CE 0%, #E8D6BE 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +54,7 @@
 .st-img-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(200, 162, 122, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(138, 90, 50, 0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -63,9 +63,9 @@
   top: 16px;
   left: 16px;
   z-index: 2;
-  background: rgba(200, 162, 122, 0.15);
-  border: 1px solid rgba(200, 162, 122, 0.4);
-  color: #C8A27A;
+  background: rgba(138, 90, 50, 0.15);
+  border: 1px solid rgba(138, 90, 50, 0.4);
+  color: #8A5A32;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -79,14 +79,14 @@
   top: 16px;
   right: 16px;
   z-index: 2;
-  background: #C8A27A;
-  color: #000;
+  background: #8A5A32;
+  color: #FFF8F0;
   font-size: 13px;
   font-weight: 900;
   padding: 6px 12px;
   border-radius: 8px;
   letter-spacing: 0.02em;
-  box-shadow: 0 4px 20px rgba(200, 162, 122, 0.45);
+  box-shadow: 0 4px 20px rgba(138, 90, 50, 0.45);
   animation: badge-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.6s both;
 }
 
@@ -108,7 +108,7 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: #C8A27A;
+  color: #8A5A32;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -120,20 +120,20 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #C8A27A;
+  background: #8A5A32;
   animation: pulse-dot 1.6s ease-out infinite;
 }
 
 @keyframes pulse-dot {
-  0%   { box-shadow: 0 0 0 0 rgba(200, 162, 122, 0.7); }
-  70%  { box-shadow: 0 0 0 8px rgba(200, 162, 122, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(200, 162, 122, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(138, 90, 50, 0.7); }
+  70%  { box-shadow: 0 0 0 8px rgba(138, 90, 50, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(138, 90, 50, 0); }
 }
 
 .st-headline {
   font-size: 28px;
   font-weight: 900;
-  color: #fff;
+  color: #2E1F16;
   line-height: 1.2;
   margin: 0 0 12px;
   letter-spacing: -0.01em;
@@ -141,31 +141,31 @@
 }
 
 .st-headline--green {
-  color: #C8A27A;
+  color: #8A5A32;
 }
 
 .st-product-name {
   font-size: 15px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
+  color: #3E2C23;
   margin-bottom: 4px;
 }
 
 .st-product-desc {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.45);
+  color: #6B5847;
   line-height: 1.5;
   margin-bottom: 12px;
 }
 
 .st-stock {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #7A6250;
   margin-bottom: 16px;
 }
 
 .st-stock strong {
-  color: #C8A27A;
+  color: #8A5A32;
 }
 
 .st-timer-row {
@@ -178,7 +178,7 @@
 .st-sep {
   font-size: 22px;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.3);
+  color: #B39A82;
   margin-top: 4px;
   line-height: 1;
 }
@@ -191,8 +191,8 @@
 }
 
 .st-digit {
-  background: #1c1c1c;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #F0E1CE;
+  border: 1px solid rgba(138, 90, 50, 0.2);
   border-radius: 8px;
   width: 52px;
   height: 44px;
@@ -201,9 +201,9 @@
   justify-content: center;
   font-size: 22px;
   font-weight: 900;
-  color: #fff;
+  color: #2E1F16;
   font-variant-numeric: tabular-nums;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 4px 12px rgba(138, 90, 50, 0.15);
 }
 
 .st-unit--flip .st-digit {
@@ -220,7 +220,7 @@
 .st-unit-label {
   font-size: 10px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.3);
+  color: #9C8672;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -233,8 +233,8 @@
 }
 
 .st-btn {
-  background: #C8A27A;
-  color: #000;
+  background: #8A5A32;
+  color: #FFF8F0;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.02em;
@@ -243,14 +243,14 @@
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  box-shadow: 0 4px 20px rgba(200, 162, 122, 0.35);
+  box-shadow: 0 4px 20px rgba(138, 90, 50, 0.35);
   white-space: nowrap;
 }
 
 .st-btn:hover {
-  background: #E8B4C8;
+  background: #A8703F;
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(232, 180, 200, 0.5);
+  box-shadow: 0 8px 28px rgba(168, 112, 63, 0.5);
 }
 
 .st-btn:active {
@@ -265,14 +265,14 @@
 
 .st-old {
   font-size: 13px;
-  color: #555;
+  color: #A8927E;
   text-decoration: line-through;
 }
 
 .st-new {
   font-size: 24px;
   font-weight: 900;
-  color: #fff;
+  color: #2E1F16;
   letter-spacing: -0.02em;
 }
 
@@ -281,7 +281,7 @@
   align-items: center;
   gap: 7px;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.4);
+  color: #7A6250;
   letter-spacing: 0.02em;
 }
 

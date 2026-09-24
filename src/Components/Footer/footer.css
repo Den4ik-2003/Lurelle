@@ -1,6 +1,6 @@
 .footer {
-  background: #0b0c0c;
-  color: #ccc;
+  background: #F5EAE0;
+  color: #4A3627;
   padding-top: 50px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .footer-col h3 {
-  color: #C8A27A;
+  color: #8A5A32;
   font-weight: 800;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -40,7 +40,7 @@
 
 .footer-col h4 {
   position: relative;
-  color: #fff;
+  color: #2E1F16;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -56,11 +56,11 @@
   bottom: 0;
   width: 22px;
   height: 2px;
-  background: #C8A27A;
+  background: #8A5A32;
 }
 
 .footer-col.about p {
-  color: #8e9290;
+  color: #6B5847;
   line-height: 1.6;
   font-size: 0.92rem;
   margin: 0 0 24px;
@@ -81,7 +81,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #b9bbb9;
+  color: #5C4433;
   text-decoration: none;
   font-size: 0.92rem;
   transition: color 0.2s ease;
@@ -103,11 +103,11 @@
 }
 
 .footer-col ul li a:hover {
-  color: #fff;
+  color: #2E1F16;
 }
 
 .footer-link-accent {
-  color: #C8A27A !important;
+  color: #8A5A32 !important;
 }
 
 .social-icons {
@@ -120,7 +120,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid #2a2c2b;
+  border: 1px solid #D8C3A9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,8 +130,8 @@
 }
 
 .social-icons a:hover {
-  border-color: #C8A27A;
-  background: rgba(200, 162, 122, 0.08);
+  border-color: #8A5A32;
+  background: rgba(138, 90, 50, 0.08);
 }
 
 .social-icons a img {
@@ -141,12 +141,12 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid #1c1d1c;
+  border-top: 1px solid #E2CFB8;
   text-align: left;
   padding-top: 22px;
   padding-bottom: 22px;
   font-size: 0.85rem;
-  color: #6c6e6d;
+  color: #8A7562;
 }
 
 .online-indicator {
@@ -160,26 +160,26 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #C8A27A;
-  box-shadow: 0 0 0 0 rgba(200, 162, 122, 0.7);
+  background: #8A5A32;
+  box-shadow: 0 0 0 0 rgba(138, 90, 50, 0.7);
   animation: online-pulse 1.6s infinite;
   flex-shrink: 0;
 }
 
 @keyframes online-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(200, 162, 122, 0.6);
+    box-shadow: 0 0 0 0 rgba(138, 90, 50, 0.6);
   }
   70% {
-    box-shadow: 0 0 0 8px rgba(200, 162, 122, 0);
+    box-shadow: 0 0 0 8px rgba(138, 90, 50, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(200, 162, 122, 0);
+    box-shadow: 0 0 0 0 rgba(138, 90, 50, 0);
   }
 }
 
 .online-text {
-  color: #8e9290;
+  color: #6B5847;
   font-size: 0.85rem;
 }
 

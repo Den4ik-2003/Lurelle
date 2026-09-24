@@ -1,7 +1,7 @@
 .basket2 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  color: #e0e0e0;
+  color: #4A3627;
 }
 
 .basket2 h2 {
@@ -23,14 +23,14 @@
 
 .basket-empty2 p {
   margin: 0;
-  color: #aaa;
+  color: #8A7562;
   text-align: center;
   font-size: 1.3rem;
 }
 
 .basket-btn2 {
   background: var(--color-green);
-  color: #121212;
+  color: #FFF8F0;
   padding: 0.9rem 2rem;
   border-radius: 10px;
   font-weight: 700;
@@ -53,8 +53,8 @@
 }
 
 .basket-table {
-  background: #161717;
-  border: 1px solid #262827;
+  background: #FFF8F0;
+  border: 1px solid #E2CFB8;
   border-radius: 16px;
   padding: 0.5rem 1.5rem;
   min-width: 0;
@@ -71,7 +71,7 @@
   row-gap: 10px;
   column-gap: 12px;
   padding: 1.25rem 0;
-  border-bottom: 1px solid #232524;
+  border-bottom: 1px solid #EBDBC4;
 }
 
 .basket-row:last-of-type {
@@ -96,7 +96,7 @@
   height: 64px;
   border-radius: 10px;
   overflow: hidden;
-  background: #1f2120;
+  background: #F0E1CE;
   flex-shrink: 0;
   display: block;
 }
@@ -116,7 +116,7 @@
 }
 
 .basket-row-name {
-  color: #fff;
+  color: #2E1F16;
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
@@ -131,7 +131,7 @@
 
 .basket-row-color {
   font-size: 0.78rem;
-  color: #777;
+  color: #9C8672;
 }
 
 .col-size {
@@ -147,8 +147,8 @@
   min-width: 36px;
   padding: 4px 10px;
   border-radius: 999px;
-  background: #1f2120;
-  color: #ccc;
+  background: #F0E1CE;
+  color: #5C4433;
   font-size: 0.82rem;
   font-weight: 600;
 }
@@ -171,7 +171,7 @@
   border: none;
   border-radius: 50%;
   background-color: var(--color-green);
-  color: #121212;
+  color: #FFF8F0;
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -189,7 +189,7 @@
   min-width: 18px;
   text-align: center;
   font-weight: 600;
-  color: #fff;
+  color: #2E1F16;
 }
 
 .col-sum {
@@ -223,7 +223,7 @@
 }
 
 .basket-remove:hover {
-  background: rgba(255, 77, 77, 0.12);
+  background: rgba(192, 57, 43, 0.1);
 }
 
 .basket-remove img {
@@ -236,7 +236,7 @@
   margin: 1rem 0 0.5rem;
   background: none;
   border: none;
-  color: #777;
+  color: #9C8672;
   font-size: 0.85rem;
   cursor: pointer;
   padding: 0;
@@ -244,14 +244,14 @@
 }
 
 .basket-clear-link:hover {
-  color: #ff4d4d;
+  color: #C0392B;
 }
 
 .basket-summary {
   position: sticky;
   top: 24px;
-  background: #161717;
-  border: 1px solid #262827;
+  background: #FFF8F0;
+  border: 1px solid #E2CFB8;
   border-radius: 16px;
   padding: 1.5rem;
   display: flex;
@@ -263,7 +263,7 @@
   margin: 0 0 4px;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #fff;
+  color: #2E1F16;
 }
 
 .basket-summary-row {
@@ -272,7 +272,7 @@
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
-  color: #999;
+  color: #8A7562;
 }
 
 .basket-summary-free {
@@ -287,9 +287,9 @@
   gap: 10px;
   padding-top: 12px;
   margin-top: 4px;
-  border-top: 1px solid #232524;
+  border-top: 1px solid #EBDBC4;
   font-size: 0.95rem;
-  color: #ccc;
+  color: #5C4433;
 }
 
 .basket-summary-total strong {
@@ -301,7 +301,7 @@
 .basket-buy-btn {
   margin-top: 6px;
   background: var(--color-green);
-  color: #121212;
+  color: #FFF8F0;
   padding: 0.85rem 1rem;
   border-radius: 10px;
   font-weight: 700;
@@ -342,7 +342,7 @@
   .basket-row--head {
     display: grid;
     padding: 0 0 0.9rem;
-    color: #777;
+    color: #9C8672;
     font-size: 0.78rem;
     font-weight: 600;
   }
