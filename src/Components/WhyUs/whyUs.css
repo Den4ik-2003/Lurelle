@@ -1,12 +1,12 @@
 :root {
-  --color-green: #8A5A32;
-  --color-green-rgb: 138, 90, 50;
+  --color-green: #C8A27A;
+  --color-green-rgb: 200, 162, 122;
 }
 
 .why-uss {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: #F5EAE0;
+  background: #0d0f12;
 }
 
 .why-header {
@@ -26,7 +26,7 @@
 .why-title {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 800;
-  color: #2E1F16;
+  color: #fff;
   margin: 0;
   line-height: 1.12;
   letter-spacing: -0.02em;
@@ -52,8 +52,8 @@
   gap: 28px;
   padding: 28px 36px 28px 32px;
   border-radius: 16px;
-  background: #FFF8F0;
-  border: 1px solid rgba(138, 90, 50, 0.15);
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
   opacity: 0;
   transform: translateX(-36px);
@@ -70,8 +70,8 @@
 }
 
 .why-card:hover {
-  border-color: rgba(var(--color-green-rgb), 0.4);
-  background: #F0E1CE;
+  border-color: rgba(var(--color-green-rgb), 0.3);
+  background: #141a1e;
 }
 
 .why-card-line {
@@ -107,7 +107,7 @@
   inset: 0;
   border-radius: 50%;
   border: 1.5px solid rgba(var(--color-green-rgb), 0.4);
-  background: rgba(var(--color-green-rgb), 0.08);
+  background: rgba(var(--color-green-rgb), 0.05);
   transition:
     border-color 0.3s,
     transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -174,7 +174,7 @@
 .why-label {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2E1F16;
+  color: #fff;
   margin: 0 0 4px;
   letter-spacing: -0.01em;
 }
@@ -190,7 +190,7 @@
 
 .why-desc {
   font-size: 0.84rem;
-  color: #6B5847;
+  color: rgba(255, 255, 255, 0.45);
   line-height: 1.6;
   margin: 0;
   max-width: 320px;
@@ -215,7 +215,7 @@
 
 .why-stat-unit {
   font-size: 0.75rem;
-  color: #7A6250;
+  color: rgba(255, 255, 255, 0.5);
   text-transform: lowercase;
   letter-spacing: 0;
   text-align: right;

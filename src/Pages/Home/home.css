@@ -9,8 +9,8 @@
   grid-template-columns: 1.1fr 1fr;
   grid-template-rows: 100%;
   align-items: stretch;
-  background: #F5EAE0;
-  color: #4A3627;
+  background: #050605;
+  color: #e0e0e0;
 }
 
 .hero::before {
@@ -20,12 +20,12 @@
   background:
     radial-gradient(
       ellipse 60% 80% at 78% 50%,
-      rgba(138, 90, 50, 0.18),
+      rgba(200, 162, 122, 0.22),
       transparent 70%
     ),
     radial-gradient(
       ellipse 40% 60% at 15% 20%,
-      rgba(196, 118, 148, 0.1),
+      rgba(232, 180, 200, 0.1),
       transparent 70%
     );
   pointer-events: none;
@@ -58,7 +58,7 @@
   line-height: 1.05;
   font-weight: 700;
   text-transform: uppercase;
-  color: #2E1F16;
+  color: #fff;
   margin: 0;
 }
 
@@ -69,7 +69,7 @@
 .hero-content p {
   font-size: 1.05rem;
   line-height: 1.6;
-  color: #6B5847;
+  color: #b8bcb9;
   max-width: 30rem;
   margin: 0;
 }
@@ -89,7 +89,7 @@
   font-size: 1rem;
   font-weight: 600;
   background-color: var(--color-green);
-  color: #FFF8F0;
+  color: #000;
   text-decoration: none;
   border-radius: 6px;
   transition:
@@ -116,9 +116,9 @@
   font-size: 1rem;
   font-weight: 600;
   background-color: transparent;
-  color: #2E1F16;
+  color: #fff;
   text-decoration: none;
-  border: 1px solid rgba(46, 31, 22, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 6px;
   transition:
     border-color 0.3s,
@@ -126,8 +126,8 @@
 }
 
 .hero-btn-secondary:hover {
-  border-color: #2E1F16;
-  background-color: rgba(46, 31, 22, 0.05);
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .hero-perks {
@@ -136,7 +136,7 @@
   gap: 1.8rem;
   margin-top: 2rem;
   padding-top: 1.8rem;
-  border-top: 1px solid rgba(46, 31, 22, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero-perk {
@@ -158,13 +158,13 @@
 
 .hero-perk strong {
   font-size: 0.85rem;
-  color: #2E1F16;
+  color: #fff;
   font-weight: 600;
 }
 
 .hero-perk span {
   font-size: 0.78rem;
-  color: #8A7562;
+  color: #8c8f8c;
 }
 
 .hero-media {
@@ -202,7 +202,6 @@
 .why-us h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #2E1F16;
 }
 
 .why-grid {
@@ -214,9 +213,8 @@
 .why-card {
   padding: 25px;
   border-radius: 12px;
-  background: #FFF8F0;
-  color: #2E1F16;
-  border: 1px solid #E2CFB8;
+  background: #111;
+  color: #fff;
   transition: 0.3s;
 }
 

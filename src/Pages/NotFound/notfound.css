@@ -1,12 +1,4 @@
 .notfound {
-  --nf-bg: #F0E1CE;
-  --nf-text: #2E1F16;
-  --nf-text-muted: #6B5847;
-  --nf-accent: #8A5A32;
-  --nf-accent-hover: #A8703F;
-  --nf-border: #D8C3A9;
-  --nf-card: #FFF8F0;
-
   min-height: calc(100vh - 160px);
   display: flex;
   align-items: center;
@@ -14,13 +6,12 @@
   position: relative;
   overflow: hidden;
   padding: 20px;
-  background: var(--nf-bg);
 }
 
 .notfound-field {
   position: absolute;
   inset: 0;
-  opacity: 0.18;
+  opacity: 0.06;
   pointer-events: none;
   display: flex;
   align-items: center;
@@ -30,7 +21,7 @@
 .notfound-lines {
   width: min(700px, 100vw);
   height: min(480px, 80vh);
-  border: 2px solid var(--nf-accent);
+  border: 2px solid #C8A27A;
   border-radius: 8px;
   position: relative;
   animation: fieldPulse 4s ease-in-out infinite;
@@ -38,7 +29,7 @@
 
 .field-line {
   position: absolute;
-  background: var(--nf-accent);
+  background: #C8A27A;
 }
 
 .field-line:nth-child(1) {
@@ -97,7 +88,7 @@
   position: absolute;
   width: 120px;
   height: 120px;
-  border: 2px solid var(--nf-accent);
+  border: 2px solid #C8A27A;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -144,7 +135,7 @@
 }
 
 .n4 {
-  color: var(--nf-text);
+  color: #fff;
   animation: slideLeft 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
@@ -153,9 +144,9 @@
 }
 
 .n0 {
-  color: var(--nf-accent);
+  color: #C8A27A;
   animation: scaleIn 0.5s 0.15s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-  text-shadow: 0 0 40px rgba(138, 90, 50, 0.25);
+  text-shadow: 0 0 60px rgba(200, 162, 122, 0.35);
 }
 
 @keyframes slideLeft {
@@ -175,7 +166,7 @@
 
 .notfound-msg {
   font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-  color: var(--nf-text-muted);
+  color: #666;
   margin: 0 0 36px;
   letter-spacing: 0.01em;
   animation: contentIn 0.7s 0.2s both;
@@ -186,8 +177,8 @@
   align-items: center;
   gap: 8px;
   padding: 13px 32px;
-  background: var(--nf-accent);
-  color: var(--nf-card);
+  background: #C8A27A;
+  color: #0a0a0a;
   font-weight: 700;
   font-size: 0.95rem;
   border-radius: 10px;
@@ -198,7 +189,7 @@
 }
 
 .notfound-btn:hover {
-  background: var(--nf-accent-hover);
+  background: #E8B4C8;
   transform: translateY(-2px);
 }
 

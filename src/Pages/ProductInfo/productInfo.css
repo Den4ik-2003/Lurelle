@@ -1,24 +1,6 @@
 .pi-page {
-  --bg: #F0E1CE;
-  --card: #FFF8F0;
-  --input: #F0E1CE;
-  --img-bg: #EBDBC4;
-  --border: #D8C3A9;
-  --border-soft: #E2CFB8;
-  --text: #2E1F16;
-  --text-muted: #6B5847;
-  --text-faint: #8A7562;
-  --text-lighter: #9C8672;
-  --accent: #8A5A32;
-  --accent-hover: #A8703F;
-  --accent-soft: rgba(138, 90, 50, 0.08);
-  --danger: #C0392B;
-  --star: #B8860B;
-
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: var(--text-muted);
-  background: var(--bg);
+  color: #e0e0e0;
 }
 
 .pi-not-found {
@@ -27,7 +9,7 @@
   align-items: center;
   height: 70vh;
   font-size: 1.5rem;
-  color: #2E1F16;
+  color: #fff;
 }
 
 .pi-top {
@@ -50,8 +32,7 @@
   min-width: 0;
   border-radius: 12px;
   overflow: hidden;
-  background: var(--img-bg);
-  border: 1px solid var(--border-soft);
+  background: #1a1a1a;
 }
 
 .pi-main-img {
@@ -72,8 +53,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(46, 31, 22, 0.7);
-  color: #F0E1CE;
+  background: rgba(0, 0, 0, 0.7);
+  color: #aaa;
   text-align: center;
   padding: 10px;
   font-size: 0.88rem;
@@ -93,7 +74,7 @@
   aspect-ratio: 1 / 1;
   border-radius: 8px;
   border: 2px solid transparent;
-  background: var(--img-bg);
+  background: #1a1a1a;
   overflow: hidden;
   cursor: pointer;
   padding: 0;
@@ -107,14 +88,9 @@
   display: block;
 }
 
-.pi-thumb:hover {
-  border-color: var(--border);
-}
-
 .pi-thumb.active {
-  border-color: var(--accent);
+  border-color: var(--color-green);
 }
-
 .pi-thumb.oos img {
   filter: grayscale(100%);
   opacity: 0.55;
@@ -131,17 +107,17 @@
 .pi-stock {
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--color-green);
 }
 
 .pi-stock.out {
-  color: var(--danger);
+  color: #e44;
 }
 
 .pi-name {
   font-size: 1.65rem;
   font-weight: 700;
-  color: var(--text);
+  color: #fff;
   line-height: 1.2;
   margin: 0;
 }
@@ -164,17 +140,15 @@
 
 .pi-rating-num {
   font-size: 0.82rem;
-  color: var(--text-muted);
+  color: #888;
 }
-
 .pi-review-cnt {
   font-size: 0.78rem;
-  color: var(--text-lighter);
+  color: #555;
 }
-
 .pi-no-reviews {
   font-size: 0.8rem;
-  color: var(--text-lighter);
+  color: #555;
 }
 
 .pi-price-row {
@@ -187,18 +161,18 @@
 .pi-price-new {
   font-size: 1.55rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--color-green);
 }
 
 .pi-price-old {
   font-size: 0.92rem;
-  color: var(--text-lighter);
+  color: #555;
   text-decoration: line-through;
 }
 
 .pi-discount {
-  background: var(--danger);
-  color: #FFF8F0;
+  background: var(--color-green);
+  color: #111;
   font-size: 0.72rem;
   font-weight: 700;
   padding: 3px 7px;
@@ -220,14 +194,13 @@
   width: 26px;
   height: 26px;
 }
-
 .pi-like:hover {
   transform: scale(1.15);
 }
 
 .pi-desc {
   font-size: 0.87rem;
-  color: var(--text-muted);
+  color: #aaa;
   line-height: 1.7;
   margin: 0;
 }
@@ -240,7 +213,7 @@
 
 .pi-label {
   font-size: 0.8rem;
-  color: var(--text-faint);
+  color: #666;
   font-weight: 500;
 }
 
@@ -254,8 +227,8 @@
   min-width: 44px;
   padding: 6px 12px;
   background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text-muted);
+  border: 1px solid #333;
+  color: #ccc;
   border-radius: 6px;
   font-size: 0.83rem;
   font-family: inherit;
@@ -267,19 +240,19 @@
 }
 
 .pi-size:hover:not(.disabled) {
-  border-color: var(--accent);
-  color: var(--text);
+  border-color: var(--color-green);
+  color: #fff;
 }
 
 .pi-size.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--card);
+  background: var(--color-green);
+  border-color: var(--color-green);
+  color: #111;
   font-weight: 700;
 }
 
 .pi-size.disabled {
-  opacity: 0.35;
+  opacity: 0.3;
   cursor: not-allowed;
 }
 
@@ -293,7 +266,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 2px solid var(--border);
+  border: 2px solid #333;
   display: inline-block;
   background: #888;
 }
@@ -302,7 +275,7 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  border: 1px solid var(--border);
+  border: 1px solid #2a2a2a;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -310,9 +283,9 @@
 .pi-qty-btn {
   width: 36px;
   height: 36px;
-  background: var(--input);
+  background: #1e1e1e;
   border: none;
-  color: var(--text-muted);
+  color: #ccc;
   font-size: 1.2rem;
   cursor: pointer;
   transition: background 0.2s;
@@ -323,12 +296,11 @@
 }
 
 .pi-qty-btn:hover:not(:disabled) {
-  background: var(--border-soft);
-  color: var(--text);
+  background: #2a2a2a;
+  color: #fff;
 }
-
 .pi-qty-btn:disabled {
-  opacity: 0.35;
+  opacity: 0.3;
   cursor: not-allowed;
 }
 
@@ -336,19 +308,18 @@
   min-width: 38px;
   text-align: center;
   font-size: 0.95rem;
-  color: var(--text);
-  background: var(--card);
+  color: #fff;
+  background: #161616;
   line-height: 36px;
 }
 
 .pi-sku {
   font-size: 0.76rem;
-  color: var(--text-lighter);
+  color: #555;
   margin: 0;
 }
-
 .pi-sku span {
-  color: var(--text-faint);
+  color: #777;
 }
 
 .pi-actions {
@@ -370,7 +341,6 @@
   cursor: pointer;
   white-space: nowrap;
   transition:
-    background 0.2s,
     opacity 0.2s,
     transform 0.15s;
   display: flex;
@@ -380,32 +350,28 @@
 }
 
 .pi-btn-cart {
-  background: transparent;
-  border: 1.5px solid var(--accent);
-  color: var(--accent);
+  background: #f39c12;
+  color: #fff;
 }
 
 .pi-btn-cart:hover:not(:disabled) {
-  background: var(--accent-soft);
-  border-color: var(--accent-hover);
-  color: var(--accent-hover);
+  background: #d98306;
 }
 
 .pi-btn-buy {
-  background: var(--accent);
-  color: var(--card);
+  background: var(--color-green);
+  color: #111;
 }
 
 .pi-btn-buy:hover:not(:disabled) {
-  background: var(--accent-hover);
+  opacity: 0.88;
   transform: scale(1.02);
 }
 
 .pi-btn-cart:disabled,
 .pi-btn-buy:disabled {
-  background: var(--border-soft);
-  border: none;
-  color: var(--text-lighter);
+  background: #222;
+  color: #555;
   cursor: not-allowed;
   transform: none;
   opacity: 1;
@@ -424,7 +390,7 @@
 .pi-rec-title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--text);
+  color: #fff;
   margin-bottom: 1.25rem;
 }
 
@@ -442,8 +408,8 @@
 }
 
 .pi-rec-card {
-  background: var(--card);
-  border: 1px solid var(--border-soft);
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
   border-radius: 12px;
   overflow: hidden;
   transition:
@@ -452,10 +418,9 @@
 }
 
 .pi-rec-card:hover {
-  border-color: var(--border);
+  border-color: #3a3a3a;
   transform: translateY(-2px);
 }
-
 .pi-rec-card.oos {
   opacity: 0.65;
 }
@@ -464,7 +429,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background: var(--img-bg);
+  background: #222;
   overflow: hidden;
 }
 
@@ -474,7 +439,6 @@
   object-fit: cover;
   display: block;
 }
-
 .pi-rec-img.oos {
   filter: grayscale(100%);
 }
@@ -484,8 +448,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(46, 31, 22, 0.65);
-  color: #F0E1CE;
+  background: rgba(0, 0, 0, 0.65);
+  color: #999;
   font-size: 0.72rem;
   text-align: center;
   padding: 5px;
@@ -495,8 +459,8 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  background: rgba(255, 248, 240, 0.75);
-  border: 1px solid rgba(138, 90, 50, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -510,9 +474,8 @@
 }
 
 .pi-rec-like:hover {
-  background: rgba(255, 248, 240, 0.95);
+  background: rgba(0, 0, 0, 0.75);
 }
-
 .pi-rec-like img {
   width: 16px;
   height: 16px;
@@ -528,7 +491,7 @@
 .pi-rec-name {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--text);
+  color: #ddd;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -539,7 +502,6 @@
   display: flex;
   gap: 2px;
 }
-
 .pi-rec-stars img {
   width: 13px;
   height: 13px;
@@ -550,23 +512,21 @@
   align-items: baseline;
   gap: 6px;
 }
-
 .pi-rec-old {
   font-size: 0.74rem;
-  color: var(--text-lighter);
+  color: #555;
   text-decoration: line-through;
 }
-
 .pi-rec-new {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--color-green);
 }
 
 .pi-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(46, 31, 22, 0.55);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -574,8 +534,8 @@
 }
 
 .pi-modal {
-  background: #FFF8F0;
-  border: 1px solid #D8C3A9;
+  background: #1e1e1e;
+  border: 1px solid #333;
   padding: 28px 32px;
   border-radius: 12px;
   text-align: center;
@@ -586,12 +546,11 @@
 }
 
 .pi-modal h3 {
-  color: #2E1F16;
+  color: #fff;
   margin: 0;
 }
-
 .pi-modal p {
-  color: #6B5847;
+  color: #aaa;
   margin: 0;
   font-size: 0.9rem;
 }
@@ -601,16 +560,15 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  background: #FFF8F0;
-  border: 1px solid #8A5A32;
-  color: #8A5A32;
+  background: #1e1e1e;
+  border: 1px solid var(--color-green);
+  color: var(--color-green);
   padding: 12px 24px;
   border-radius: 10px;
   font-size: 0.92rem;
   font-weight: 600;
   z-index: 1200;
   white-space: nowrap;
-  box-shadow: 0 6px 20px rgba(46, 31, 22, 0.15);
 }
 
 @media (max-width: 1200px) {
@@ -635,6 +593,34 @@
   .pi-info {
     max-width: 100%;
   }
+
+  .pi-rec-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .pi-rec-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .pi-top {
+    flex-direction: column;
+  }
+  .pi-gallery {
+    width: 100%;
+  }
+  .pi-main-wrap {
+    flex: 1;
+  }
+  .pi-info {
+    max-width: 100%;
+  }
+  .pi-rec-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 700px) {
@@ -647,11 +633,21 @@
   .pi-name {
     font-size: 1.3rem;
   }
-
   .pi-actions {
     flex-direction: column;
   }
+  .pi-btn-cart,
+  .pi-btn-buy {
+    flex: unset;
+    width: 100%;
+  }
 
+  .pi-name {
+    font-size: 1.3rem;
+  }
+  .pi-actions {
+    flex-direction: column;
+  }
   .pi-btn-cart,
   .pi-btn-buy {
     flex: unset;
@@ -663,12 +659,25 @@
   .pi-gallery {
     flex-direction: column;
   }
-
   .pi-thumbs {
     flex-direction: row;
     width: 100%;
   }
+  .pi-thumb {
+    flex: 1;
+    width: auto;
+  }
+  .pi-rec-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 
+  .pi-gallery {
+    flex-direction: column;
+  }
+  .pi-thumbs {
+    flex-direction: row;
+    width: 100%;
+  }
   .pi-thumb {
     flex: 1;
     width: auto;
@@ -677,6 +686,6 @@
 
 @media (max-width: 360px) {
   .pi-rec-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
 }

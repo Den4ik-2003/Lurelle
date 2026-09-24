@@ -1,14 +1,14 @@
 .top-deals {
-  --bg-card-solid: #FFF8F0;
-  --bg-input: #F0E1CE;
-  --border: #D8C3A9;
-  --border-soft: #E2CFB8;
-  --text: #2E1F16;
-  --text-muted: #6B5847;
-  --text-faint: #9C8672;
-  --accent: #8A5A32;
-  --danger: #C0392B;
-  --star: #B8860B;
+  --bg-card-solid: #161717;
+  --bg-input: #1d1f1e;
+  --border: #2a2c2b;
+  --border-soft: #232524;
+  --text: #f5f5f5;
+  --text-muted: #9a9c9b;
+  --text-faint: #6c6e6d;
+  --accent: #C8A27A;
+  --danger: #ef4444;
+  --star: #f5b400;
   --radius-lg: 18px;
   --radius-md: 10px;
 
@@ -86,9 +86,9 @@
   font-size: 12px;
 }
 .pc-badge-sale {
-  background: rgba(192, 57, 43, 0.12);
+  background: rgba(239, 68, 68, 0.14);
   color: var(--danger);
-  border-color: rgba(192, 57, 43, 0.4);
+  border-color: rgba(239, 68, 68, 0.4);
 }
 
 .pc-wishlist {
@@ -99,8 +99,8 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(255, 248, 240, 0.75);
-  border: 1px solid rgba(138, 90, 50, 0.2);
+  background: rgba(14, 15, 15, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +112,7 @@
   padding: 0;
 }
 .pc-wishlist:hover {
-  background: rgba(255, 248, 240, 0.95);
+  background: rgba(14, 15, 15, 0.85);
   transform: scale(1.08);
 }
 .pc-wishlist img {
@@ -123,7 +123,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 1/1;
-  background: #F0E1CE;
+  background: #1a1b1b;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -135,7 +135,7 @@
   justify-content: center;
   color: var(--text-faint);
   font-size: 36px;
-  background: #EBDBC4;
+  background: #16181a;
 }
 
 .pc-img {
@@ -149,17 +149,17 @@
 .pc-out-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(46, 31, 22, 0.55);
+  background: rgba(10, 10, 10, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
 .pc-out-overlay span {
-  color: #FFF8F0;
+  color: #fff;
   font-size: 13.5px;
   font-weight: 700;
-  background: rgba(46, 31, 22, 0.6);
+  background: rgba(0, 0, 0, 0.55);
   padding: 7px 14px;
   border-radius: 999px;
 }
