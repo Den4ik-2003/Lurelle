@@ -2,7 +2,7 @@
   position: relative;
   top: 0;
   min-height: 100vh;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   overflow: hidden;
   display: grid;
@@ -118,7 +118,7 @@
   background-color: transparent;
   color: #000;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid #000;
   border-radius: 6px;
   transition:
     border-color 0.3s,
