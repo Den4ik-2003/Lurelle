@@ -131,7 +131,7 @@
 }
 
 .contact-form-wrap {
-  background: #111;
+  background: #fff2e0;
   border: 1px solid #1e1e1e;
   border-radius: 16px;
   padding: 32px 28px;
@@ -164,7 +164,7 @@
 .contact-form textarea {
   padding: 12px 14px;
   font-size: 0.9rem;
-  background: #0d0d0d;
+  background: #ffeec5;
   border: 1px solid #222;
   border-radius: 8px;
   color: #eee;
