@@ -19,7 +19,7 @@ const API_KEY = import.meta.env.VITE_API_KEY;
 const NAV_FILTER_KEY = "footerNavFilter";
 
 const ITEMS_PER_PAGE = 24;
-const SIZES = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"];
+const SIZES = ["Міні", "Малий", "Середній", "Великий"];
 const CATS_INITIAL = 5;
 const BRANDS_INITIAL = 5;
 const COLORS_INITIAL = 12;
@@ -315,10 +315,10 @@ export default function Products() {
   return (
     <section className="products-page container">
       <Helmet>
-        <title>Брендовий чоловічий одяг | Stone Island, Premium Collection | Athelon</title>
-        <meta name="description" content="Купити брендовий чоловічий одяг в Україні. Футболки, худі, світшоти та інший преміум одяг Stone Island. Оригінальний стиль, висока якість та швидка доставка по всій Україні." />
-        <meta name="keywords" content="брендовий чоловічий одяг, Stone Island, чоловічі футболки, преміум одяг, дизайнерський одяг, чоловічий одяг Україна, купити Stone Island" />
-        <link rel="canonical" href="https://athelon.netlify.app/products" />
+        <title>Жіночі сумки | Premium Collection | Lurelle</title>
+        <meta name="description" content="Купити жіночі сумки в Україні. Шкіряні сумки, клатчі, крос-боді та інший преміум аксесуар. Оригінальний стиль, висока якість та швидка доставка по всій Україні." />
+        <meta name="keywords" content="жіночі сумки, шкіряні сумки, преміум аксесуари, дизайнерські сумки, купити сумку Україна, клатч, крос-боді" />
+        <link rel="canonical" href="https://lurelle.netlify.app/products" />
       </Helmet>
 
       <button className="sidebar-toggle" onClick={() => setSidebarOpen((o) => !o)}>

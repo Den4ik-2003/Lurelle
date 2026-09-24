@@ -10,7 +10,7 @@ export default function Loader() {
 
     const N = 16;
     const R = 36;
-    const colors = ["#00ff66", "#00ff66", "#00ccff", "#00ff66"];
+    const colors = ["#C8A27A", "#C8A27A", "#E8B4C8", "#C8A27A"];
 
     for (let i = 0; i < N; i++) {
       const t = (i / N) * Math.PI * 4;

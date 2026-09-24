@@ -20,12 +20,12 @@
   background:
     radial-gradient(
       ellipse 60% 80% at 78% 50%,
-      rgba(0, 230, 118, 0.22),
+      rgba(200, 162, 122, 0.22),
       transparent 70%
     ),
     radial-gradient(
       ellipse 40% 60% at 15% 20%,
-      rgba(0, 230, 118, 0.08),
+      rgba(232, 180, 200, 0.1),
       transparent 70%
     );
   pointer-events: none;

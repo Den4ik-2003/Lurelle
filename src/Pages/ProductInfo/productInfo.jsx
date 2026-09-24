@@ -156,7 +156,7 @@ export default function ProductInfo() {
     return (
       <div className="container pi-not-found">
         <Helmet>
-          <title>Товар не знайдено — Athelon</title>
+          <title>Товар не знайдено — Lurelle</title>
         </Helmet>
         <p>Товар не знайдено 😔</p>
       </div>
@@ -172,14 +172,14 @@ export default function ProductInfo() {
   return (
     <div className="container pi-page">
       <Helmet>
-        <title>{product.name} — купити в Athelon</title>
+        <title>{product.name} — купити в Lurelle</title>
         <meta
           name="description"
           content={`${product.name} за ціною ${product.newPrice} грн.`}
         />
         <link
           rel="canonical"
-          href={`https://athelon.netlify.app/product/${product.id}`}
+          href={`https://lurelle.netlify.app/product/${product.id}`}
         />
       </Helmet>
 

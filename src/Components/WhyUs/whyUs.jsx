@@ -23,9 +23,9 @@ const FEATURES = [
   {
     id: "quality",
     label: "Перевірена якість",
-    detail: "50+ брендів у каталозі",
+    detail: "50+ моделей у каталозі",
     stat: "50+",
-    unit: "брендів",
+    unit: "моделей",
     desc: "Кожен постачальник проходить ручний відбір. Жодного контрафакту.",
     icon: (
       <svg viewBox="0 0 64 64" fill="none" className="why-icon-svg">
@@ -85,7 +85,7 @@ export default function WhyUs() {
       <div className="why-header">
         <p className="why-eyebrow">Наші переваги</p>
         <h2 className="why-title">
-          Чому обирають <span>Athleon</span>?
+          Чому обирають <span>Lurelle</span>?
         </h2>
       </div>
 

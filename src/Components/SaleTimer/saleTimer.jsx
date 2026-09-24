@@ -1,6 +1,5 @@
 
 
-
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./saleTimer.css";
@@ -172,9 +171,9 @@ export default function SaleTimer() {
 
           <div className="st-urgency">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#00ff88" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <line x1="3" y1="6" x2="21" y2="6" stroke="#00ff88" strokeWidth="2" strokeLinecap="round"/>
-              <path d="M16 10a4 4 0 01-8 0" stroke="#00ff88" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#C8A27A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <line x1="3" y1="6" x2="21" y2="6" stroke="#C8A27A" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M16 10a4 4 0 01-8 0" stroke="#C8A27A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             Поспішай! Кількість обмежена
           </div>

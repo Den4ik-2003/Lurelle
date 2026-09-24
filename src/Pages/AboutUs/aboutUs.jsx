@@ -12,7 +12,7 @@ const FEATURES = [
   {
     icon: qualityIcon,
     title: "Преміальна якість",
-    text: "Сертифіковані матеріали та фабричний шов",
+    text: "Натуральна шкіра та ретельна фурнітура",
   },
   {
     icon: clientIcon,
@@ -24,14 +24,14 @@ const FEATURES = [
 const MISSION_POINTS = [
   "Тільки оригінальний товар",
   "Постійне оновлення асортименту",
-  "Увага до деталей у кожному замовленні",
+  "Увага до деталей у кожній сумці",
   "Підтримка та турбота про клієнтів",
 ];
 
 const STATS = [
   { num: "2+", label: "роки досвіду" },
-  { num: "100+", label: "задоволених клієнтів" },
-  { num: "50+", label: "брендових позицій" },
+  { num: "100+", label: "задоволених клієнток" },
+  { num: "50+", label: "моделей сумок" },
   { num: "1–3 дні", label: "швидка доставка" },
 ];
 
@@ -58,41 +58,41 @@ export default function AboutUs() {
   return (
     <div className="about-page" ref={revealRef}>
       <Helmet>
-        <title>Про нас — Athelon | Брендовий чоловічий одяг в Україні</title>
+        <title>Про нас — Lurelle | Жіночі сумки в Україні</title>
         <meta
           name="description"
-          content="Athelon — офіційний магазин брендового чоловічого одягу в Україні. Nike, Stone Island, Adidas та інші топ-бренди. Оригінальна якість, швидка доставка по всій Україні."
+          content="Lurelle — офіційний магазин жіночих сумок в Україні. Шкіряні сумки, клатчі, крос-боді та преміум аксесуари. Оригінальна якість, швидка доставка по всій Україні."
         />
         <meta
           name="keywords"
-          content="брендовий чоловічий одяг, купити Nike Україна, Stone Island Україна, Adidas чоловічий, брендовий одяг Athelon"
+          content="жіночі сумки, купити сумку Україна, шкіряні сумки Lurelle, клатч, крос-боді, преміум аксесуари"
         />
         <meta
           property="og:title"
-          content="Про нас — Athelon | Брендовий чоловічий одяг"
+          content="Про нас — Lurelle | Жіночі сумки"
         />
         <meta
           property="og:description"
-          content="Стиль життя, а не просто одяг. Nike, Stone Island, Adidas та інші провідні бренди для тих, хто цінує якість і впевненість у кожному русі."
+          content="Стиль, а не просто аксесуар. Шкіряні сумки, клатчі та крос-боді для тих, хто цінує якість і впевненість у кожній деталі."
         />
-        <meta property="og:url" content="https://athelon.netlify.app/about" />
+        <meta property="og:url" content="https://lurelle.netlify.app/about" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://athelon.netlify.app/about" />
+        <link rel="canonical" href="https://lurelle.netlify.app/about" />
       </Helmet>
 
       <section className="about-hero">
         <div className="about-hero__text" data-reveal data-reveal-dir="left">
           <p className="about-eyebrow">Про нас</p>
           <h1 className="about-hero__title">
-            Про <span>Athelon</span>
+            Про <span>Lurelle</span>
           </h1>
           <p className="about-hero__lead">
-            Athelon — це більше, ніж одяг. Це стиль життя. Ми створюємо
-            брендовий чоловічий одяг для тих, хто цінує якість, комфорт і
-            впевненість у кожному русі.
+            Lurelle — це більше, ніж сумки. Це стиль життя. Ми створюємо
+            жіночі сумки для тих, хто цінує якість, комфорт і впевненість у
+            кожній деталі образу.
           </p>
           <p className="about-hero__lead">
-            Наша місія — допомогти кожному чоловіку підкреслити індивідуальність
+            Наша місія — допомогти кожній жінці підкреслити індивідуальність
             та впевненість через лаконічний дизайн, преміальні матеріали та
             увагу до деталей.
           </p>
@@ -100,7 +100,7 @@ export default function AboutUs() {
 
         <div className="about-hero__media" data-reveal data-reveal-dir="right">
           <div className="about-img-frame">
-            <img src={History} alt="Брендовий чоловічий одяг Athelon" />
+            <img src={History} alt="Жіночі сумки Lurelle" />
           </div>
         </div>
       </section>
@@ -127,9 +127,9 @@ export default function AboutUs() {
           <p className="about-eyebrow">Наша місія</p>
           <h2>Створювати стиль, який надихає</h2>
           <p>
-            Ми віримо, що одяг — це спосіб самовираження. Наша місія — допомогти
-            кожному чоловіку підкреслити індивідуальність через якісний
-            брендовий одяг.
+            Ми віримо, що сумка — це спосіб самовираження. Наша місія —
+            допомогти кожній жінці підкреслити індивідуальність через якісний
+            брендовий аксесуар.
           </p>
 
           <ul className="mission-list">
@@ -148,7 +148,7 @@ export default function AboutUs() {
           data-reveal-dir="right"
         >
           <div className="about-img-frame">
-            <img src={Mission} alt="Магазин брендового одягу Athelon" />
+            <img src={Mission} alt="Магазин жіночих сумок Lurelle" />
           </div>
         </div>
       </section>

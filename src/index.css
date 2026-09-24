@@ -26,10 +26,10 @@ body {
 :root {
   --color-bg: #121212;
   --color-text: #e0e0e0;
-  --color-green: #00ff66;
-  --color-hover: #00cc44;
-  --color-btn-bg: #00ff66;
-  --color-btn-hover: #00cc44;
+  --color-green: #C8A27A;
+  --color-hover: #E8B4C8;
+  --color-btn-bg: #C8A27A;
+  --color-btn-hover: #E8B4C8;
 }
 
 a {

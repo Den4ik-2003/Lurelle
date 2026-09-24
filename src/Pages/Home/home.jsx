@@ -12,30 +12,30 @@ export default function Home() {
     <div>
       <Helmet>
         <title>
-          Брендовий чоловічий одяг | Stone Island, Premium Collection | Athelon
+          Жіночі сумки | Premium Collection | Lurelle
         </title>
 
         <meta
           name="description"
-          content="Купити брендовий чоловічий одяг в Україні. Футболки, худі, світшоти та інший преміум одяг Stone Island. Оригінальний стиль, висока якість та швидка доставка по всій Україні."
+          content="Купити жіночі сумки в Україні. Шкіряні сумки, клатчі, крос-боді та інший преміум аксесуар. Оригінальний стиль, висока якість та швидка доставка по всій Україні."
         />
 
         <meta
           name="keywords"
-          content="брендовий чоловічий одяг, Stone Island, чоловічі футболки, преміум одяг, дизайнерський одяг, чоловічий одяг Україна, купити Stone Island"
+          content="жіночі сумки, шкіряні сумки, преміум аксесуари, дизайнерські сумки, купити сумку Україна, клатч, крос-боді"
         />
 
         <meta
           property="og:title"
-          content="Брендовий чоловічий одяг | Stone Island, Premium Collection | Athelon"
+          content="Жіночі сумки | Premium Collection | Lurelle"
         />
         <meta
           property="og:description"
-          content="Брендовий чоловічий одяг та аксесуари для тих, хто цінує комфорт, якість і стиль. Оригінал, гарантія якості, швидка доставка по всій Україні."
+          content="Жіночі сумки та аксесуари для тих, хто цінує комфорт, якість і стиль. Оригінал, гарантія якості, швидка доставка по всій Україні."
         />
-        <meta property="og:url" content="https://athelon.netlify.app/" />
+        <meta property="og:url" content="https://lurelle.netlify.app/" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://athelon.netlify.app/" />
+        <link rel="canonical" href="https://lurelle.netlify.app/" />
       </Helmet>
 
       <section className="hero">
@@ -49,7 +49,7 @@ export default function Home() {
           </h1>
 
           <p>
-            Брендовий одяг та аксесуари для тих, хто цінує комфорт, якість і
+            Жіночі сумки та аксесуари для тих, хто цінує комфорт, якість і
             стиль.
           </p>
 
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="hero-media">
           <img
             src={HeroImage}
-            alt="Athelon — брендовий одяг"
+            alt="Lurelle — жіночі сумки"
             className="hero-image"
           />
         </div>

@@ -137,7 +137,7 @@
 
 .order-option.active {
   border-color: var(--color-green);
-  background: #0d1f14;
+  background: #1f1712;
 }
 
 .order-option-icon {
@@ -339,7 +339,7 @@
 }
 
 .order-btn:hover:not(:disabled) {
-  background: #00cc66;
+  background: #E8B4C8;
   transform: translateY(-1px);
 }
 
@@ -406,7 +406,7 @@
 }
 
 .modal-content2 .button:hover {
-  background: #00cc66;
+  background: #E8B4C8;
 }
 
 @media (max-width: 900px) {

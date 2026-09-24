@@ -26,7 +26,7 @@
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-green, #00ff66);
+  color: var(--color-green, #C8A27A);
   margin: 0 0 12px;
 }
 
@@ -48,7 +48,7 @@
   letter-spacing: -0.02em;
 }
 .about-hero__title span {
-  color: var(--color-green, #00ff66);
+  color: var(--color-green, #C8A27A);
 }
 
 .about-hero__lead {
@@ -211,7 +211,7 @@
 .stat-item__num {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 800;
-  color: var(--color-green, #00ff66);
+  color: var(--color-green, #C8A27A);
 }
 .stat-item__label {
   font-size: 0.82rem;

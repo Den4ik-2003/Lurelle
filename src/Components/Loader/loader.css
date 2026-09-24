@@ -1,5 +1,5 @@
 :root {
-  --color-green: #00ff66;
+  --color-green: #C8A27A;
 }
 
 @keyframes helixRotate {
@@ -50,7 +50,7 @@
 .ring-pulse {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(0, 255, 102, 0.4);
+  border: 1px solid rgba(200, 162, 122, 0.4);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -63,7 +63,7 @@
   left: -30px;
   right: -30px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 102, 0.6), rgba(0, 204, 255, 0.6), transparent);
+  background: linear-gradient(90deg, transparent, rgba(200, 162, 122, 0.6), rgba(232, 180, 200, 0.6), transparent);
   animation: scanLine 4s linear infinite;
   pointer-events: none;
 }
@@ -99,14 +99,14 @@
 .node-b {
   width: 10px;
   height: 10px;
-  background: #00ccff;
+  background: #E8B4C8;
   animation: nodeGlow 2s ease-in-out infinite;
 }
 
 .bridge {
   position: absolute;
   height: 1.5px;
-  background: linear-gradient(90deg, var(--color-green), #00ccff);
+  background: linear-gradient(90deg, var(--color-green), #E8B4C8);
   transform-origin: left center;
   animation: bridgeShimmer 2s ease-in-out infinite;
 }

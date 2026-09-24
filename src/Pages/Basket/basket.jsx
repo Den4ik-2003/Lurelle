@@ -112,22 +112,22 @@ export default function Basket() {
   return (
     <section className="basket2 container">
       <Helmet>
-        <title>Кошик — Athelon | Брендовий чоловічий одяг</title>
+        <title>Кошик — Lurelle | Жіночі сумки</title>
         <meta
           name="description"
-          content="Перегляньте товари у вашому кошику та оформіть замовлення на брендовий чоловічий одяг від Athelon."
+          content="Перегляньте товари у вашому кошику та оформіть замовлення на жіночі сумки від Lurelle."
         />
         <meta
           property="og:title"
-          content="Кошик — Athelon | Брендовий чоловічий одяг"
+          content="Кошик — Lurelle | Жіночі сумки"
         />
         <meta
           property="og:description"
-          content="Оформіть замовлення на брендовий чоловічий одяг від Athelon."
+          content="Оформіть замовлення на жіночі сумки від Lurelle."
         />
-        <meta property="og:url" content="https://athelon.netlify.app/basket" />
+        <meta property="og:url" content="https://lurelle.netlify.app/basket" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://athelon.netlify.app/basket" />
+        <link rel="canonical" href="https://lurelle.netlify.app/basket" />
       </Helmet>
 
       <h2>Ваш кошик</h2>

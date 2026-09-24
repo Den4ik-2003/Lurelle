@@ -23,8 +23,8 @@ export default function Contact() {
   const API_URL_CONTACT = import.meta.env.VITE_API_URL_CONTACT;
 
   const contacts = [
-    { icon: instagramIcon, label: "Instagram", value: "@athelon.store" },
-    { icon: emailIcon, label: "Електронна пошта", value: "athelonstore@gmail.com" },
+    { icon: instagramIcon, label: "Instagram", value: "@lurelle.store" },
+    { icon: emailIcon, label: "Електронна пошта", value: "lurellestore@gmail.com" },
     { icon: clockIcon, label: "Графік роботи", value: "Пн–Пт, 9:00–18:00" },
   ];
 
@@ -68,23 +68,23 @@ export default function Contact() {
   return (
     <div className="contact-page container">
       <Helmet>
-        <title>Контакти — Athelon | Брендовий чоловічий одяг в Україні</title>
+        <title>Контакти — Lurelle | Жіночі сумки в Україні</title>
         <meta
           name="description"
-          content="Зв'яжіться з Athelon — офіційний магазин брендового чоловічого одягу в Україні. Nike, Stone Island, Adidas та інші топ-бренди. Відповімо протягом одного робочого дня."
+          content="Зв'яжіться з Lurelle — офіційний магазин жіночих сумок в Україні. Шкіряні сумки, клатчі, крос-боді. Відповімо протягом одного робочого дня."
         />
         <meta
           name="keywords"
-          content="брендовий чоловічий одяг, купити Nike Україна, Stone Island Україна, Adidas чоловічий, брендовий одяг Athelon"
+          content="жіночі сумки, купити сумку Україна, шкіряні сумки Lurelle, клатч, крос-боді"
         />
-        <meta property="og:title" content="Контакти — Athelon | Брендовий чоловічий одяг" />
+        <meta property="og:title" content="Контакти — Lurelle | Жіночі сумки" />
         <meta
           property="og:description"
-          content="Напишіть нам — відповімо протягом одного робочого дня. Брендовий чоловічий одяг Nike, Stone Island, Adidas. Instagram @athelon.store."
+          content="Напишіть нам — відповімо протягом одного робочого дня. Жіночі сумки Lurelle. Instagram @lurelle.store."
         />
-        <meta property="og:url" content="https://athelon.netlify.app/contact" />
+        <meta property="og:url" content="https://lurelle.netlify.app/contact" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://athelon.netlify.app/contact" />
+        <link rel="canonical" href="https://lurelle.netlify.app/contact" />
       </Helmet>
 
       <div className="contact-hero">
@@ -116,10 +116,10 @@ export default function Contact() {
               Напишіть нам у месенджерах — ми відповімо найшвидше.
             </p>
             <div className="help-socials">
-              <a href="https://instagram.com/athelon.store" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/lurelle.store" target="_blank" rel="noopener noreferrer">
                 <img src={instagramColor} alt="Instagram" />
               </a>
-              <a href="https://t.me/athelonstore" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/lurellestore" target="_blank" rel="noopener noreferrer">
                 <img src={telegramColor} alt="Telegram" />
               </a>
             </div>
@@ -185,7 +185,7 @@ export default function Contact() {
         <div className="contact-right">
           <div className="brand-banner">
             <div className="brand-model-img">
-              <img src={contactImage} alt="Брендовий чоловічий одяг Athelon" />
+              <img src={contactImage} alt="Жіночі сумки Lurelle" />
               <div className="brand-model-fade-left" />
               <div className="brand-model-fade-right" />
             </div>

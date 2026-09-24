@@ -21,7 +21,7 @@
 .notfound-lines {
   width: min(700px, 100vw);
   height: min(480px, 80vh);
-  border: 2px solid #00ff6a;
+  border: 2px solid #C8A27A;
   border-radius: 8px;
   position: relative;
   animation: fieldPulse 4s ease-in-out infinite;
@@ -29,7 +29,7 @@
 
 .field-line {
   position: absolute;
-  background: #00ff6a;
+  background: #C8A27A;
 }
 
 .field-line:nth-child(1) {
@@ -88,7 +88,7 @@
   position: absolute;
   width: 120px;
   height: 120px;
-  border: 2px solid #00ff6a;
+  border: 2px solid #C8A27A;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -144,9 +144,9 @@
 }
 
 .n0 {
-  color: #00ff6a;
+  color: #C8A27A;
   animation: scaleIn 0.5s 0.15s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-  text-shadow: 0 0 60px rgba(0, 255, 106, 0.35);
+  text-shadow: 0 0 60px rgba(200, 162, 122, 0.35);
 }
 
 @keyframes slideLeft {
@@ -177,7 +177,7 @@
   align-items: center;
   gap: 8px;
   padding: 13px 32px;
-  background: #00ff6a;
+  background: #C8A27A;
   color: #0a0a0a;
   font-weight: 700;
   font-size: 0.95rem;
@@ -189,7 +189,7 @@
 }
 
 .notfound-btn:hover {
-  background: #00e85f;
+  background: #E8B4C8;
   transform: translateY(-2px);
 }
 

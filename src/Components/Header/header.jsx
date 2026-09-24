@@ -52,7 +52,7 @@ export default function Header({ openModal }) {
       <header className="header">
         <div className="container header-inner">
           <div className="logo">
-            <h1>Athelon</h1>
+            <h1>Lurelle</h1>
           </div>
 
           <div className="mobile-actions">

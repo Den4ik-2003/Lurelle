@@ -163,23 +163,23 @@ export default function Order() {
     <div className="container order-page">
       <Helmet>
         <title>
-          Оформлення замовлення — Athelon | Брендовий чоловічий одяг
+          Оформлення замовлення — Lurelle | Жіночі сумки
         </title>
         <meta
           name="description"
-          content="Оформіть замовлення на брендовий чоловічий одяг від Athelon. Доставка Новою Поштою та УкрПоштою по всій Україні."
+          content="Оформіть замовлення на жіночі сумки від Lurelle. Доставка Новою Поштою та УкрПоштою по всій Україні."
         />
         <meta
           property="og:title"
-          content="Оформлення замовлення — Athelon | Брендовий чоловічий одяг"
+          content="Оформлення замовлення — Lurelle | Жіночі сумки"
         />
         <meta
           property="og:description"
-          content="Швидке оформлення замовлення на брендовий чоловічий одяг. Доставка по всій Україні."
+          content="Швидке оформлення замовлення на жіночі сумки. Доставка по всій Україні."
         />
-        <meta property="og:url" content="https://athelon.netlify.app/order" />
+        <meta property="og:url" content="https://lurelle.netlify.app/order" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://athelon.netlify.app/order" />
+        <link rel="canonical" href="https://lurelle.netlify.app/order" />
       </Helmet>
 
       <h2>Оформлення замовлення</h2>
@@ -193,7 +193,7 @@ export default function Order() {
                 <span>Ім'я</span>
                 <input
                   type="text"
-                  placeholder="Іван"
+                  placeholder="Марія"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -220,7 +220,7 @@ export default function Order() {
                 <span>E-mail (необов'язково)</span>
                 <input
                   type="email"
-                  placeholder="ivan@example.com"
+                  placeholder="maria@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
