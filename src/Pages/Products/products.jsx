@@ -14,6 +14,7 @@ import arrowLeft from "../../assets/Icons/arrowLeft.svg";
 import arrowRight from "../../assets/Icons/arrowRight.svg";
 
 const API_URL = import.meta.env.VITE_API_URL
+
 const COMMENTS_URL = import.meta.env.VITE_COMMENTS_URL;
 const API_KEY = import.meta.env.VITE_API_KEY;
 const NAV_FILTER_KEY = "footerNavFilter";
@@ -103,7 +104,7 @@ function ProductCard({ product, liked, onToggleLike }) {
   const stop = (e) => { e.preventDefault(); e.stopPropagation(); };
 
   return (
-    <div className={`pc-card ${!available ? "pc-card--oos" : ""}`}>
+    <div className={`pc-card2 ${!available ? "pc-card2--oos" : ""}`}>
       {badge && (
         <span className={`pc-badge ${badge.cls}`}>
           {badge.icon && <i className={`ti ${badge.icon}`} />}
@@ -117,12 +118,12 @@ function ProductCard({ product, liked, onToggleLike }) {
         {mainImage ? <img src={mainImage} alt={product.name} className="pc-img" /> : <div className="pc-img-placeholder"><i className="ti ti-photo" /></div>}
         {!available && <div className="pc-out-overlay"><span>Немає в наявності</span></div>}
       </div>
-      <div className="pc-body">
+      <div className="pc-body2">
         <div className="pc-label-rows">
           {product.category && <span className="pc-label pc-label-cat">{product.category}</span>}
           {product.brand && <span className="pc-label pc-label-brand">{product.brand}</span>}
         </div>
-        <h3 className="pc-name">{product.name}</h3>
+        <h3 className="pc-name2">{product.name}</h3>
         <p className="pc-desc" dangerouslySetInnerHTML={{ __html: product.description }} />
         <div className="pc-rating-row">
           {hasComments ? (
@@ -377,19 +378,8 @@ export default function Products() {
             </div>
           </div>
 
-          {/* SIZES */}
-          <div className="filter-group">
-            <div className="filter-group-head">Розмір <i className="ti ti-chevron-up" /></div>
-            <div className="filter-group-body">
-              <div className="size-grid">
-                {SIZES.map((sz) => (
-                  <button key={sz} className={`size-btn ${selSizes.includes(sz) ? "active" : ""}`} onClick={() => toggleArr(selSizes, setSelSizes, sz)}>{sz}</button>
-                ))}
-              </div>
-            </div>
-          </div>
+         
 
-          {/* COLORS */}
           {apiColors.length > 0 && (
             <div className="filter-group">
               <div className="filter-group-head">Колір <i className="ti ti-chevron-up" /></div>
@@ -451,7 +441,7 @@ export default function Products() {
             <>
               <div className="products-grid">
                 {pageProducts.map((item) => (
-                  <NavLink key={item.id} to={`/product/${item.id}`} className="pc-card-link">
+                  <NavLink key={item.id} to={`/product/${item.id}`} className="pc-card2-link">
                     <ProductCard product={item} liked={likedIds.includes(item.id)} onToggleLike={toggleLike} />
                   </NavLink>
                 ))}

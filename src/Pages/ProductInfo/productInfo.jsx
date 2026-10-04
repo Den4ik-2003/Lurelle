@@ -10,7 +10,8 @@ import CartIcon from "../../assets/Icons/cart.svg";
 import Loader from "../../Components/Loader/loader";
 import "./productInfo.css";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://lurelle-server.onrender.com/api/products";
+// const API_URL = import.meta.env.VITE_API_URL;
 const COMMENTS_URL = import.meta.env.COMMENTS_URL;
 const API_KEY = import.meta.env.VITE_API_KEY;
 
