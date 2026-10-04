@@ -23,8 +23,7 @@ export default function Contact() {
   const API_URL_CONTACT = import.meta.env.VITE_API_URL_CONTACT;
 
   const contacts = [
-    { icon: instagramIcon, label: "Instagram", value: "@lurelle.store" },
-    { icon: emailIcon, label: "Електронна пошта", value: "lurellestore@gmail.com" },
+    { icon: instagramIcon, label: "Instagram", value: "@lurelle.uaa" },
     { icon: clockIcon, label: "Графік роботи", value: "Пн–Пт, 9:00–18:00" },
   ];
 
@@ -116,10 +115,10 @@ export default function Contact() {
               Напишіть нам у месенджерах — ми відповімо найшвидше.
             </p>
             <div className="help-socials">
-              <a href="https://instagram.com/lurelle.store" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/lurelle.uaa" target="_blank" rel="noopener noreferrer">
                 <img src={instagramColor} alt="Instagram" />
               </a>
-              <a href="https://t.me/lurellestore" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/lurellestore" uaa="_blank" rel="noopener noreferrer">
                 <img src={telegramColor} alt="Telegram" />
               </a>
             </div>
