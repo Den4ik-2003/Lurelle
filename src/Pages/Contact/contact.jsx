@@ -118,9 +118,7 @@ export default function Contact() {
               <a href="https://instagram.com/lurelle.uaa" target="_blank" rel="noopener noreferrer">
                 <img src={instagramColor} alt="Instagram" />
               </a>
-              <a href="https://t.me/lurellestore" uaa="_blank" rel="noopener noreferrer">
-                <img src={telegramColor} alt="Telegram" />
-              </a>
+              
             </div>
           </div>
         </div>
