@@ -71,7 +71,7 @@
 
 .why-card:hover {
   border-color: rgba(var(--color-green-rgb), 0.3);
-  background: #fff;
+  background: #e6c9a3;
 }
 
 .why-card-line {
