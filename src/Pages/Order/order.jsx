@@ -5,43 +5,9 @@ import "./order.css";
 
 import NovaPoshtaIcon from "../../assets/Icons/novaposhta.webp";
 import UkrPoshtaIcon from "../../assets/Icons/ukrposhta.png";
+import CardPayIcon from "../../assets/Icons/cardPay.png";
+import CashPayIcon from "../../assets/Icons/cashPay.png";
 import LockIcon from "../../assets/Icons/lock.png";
-
-const TELEGRAM_TOKEN = import.meta.env.VITE_TELEGRAM_TOKEN;
-const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
-
-async function sendTelegram(text) {
-  if (!TELEGRAM_TOKEN || !TELEGRAM_CHAT_ID) {
-    console.error(
-      "TELEGRAM: немає VITE_TELEGRAM_TOKEN або VITE_TELEGRAM_CHAT_ID",
-    );
-    return false;
-  }
-
-  try {
-    const r = await fetch(
-      `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          chat_id: TELEGRAM_CHAT_ID,
-          text,
-          disable_web_page_preview: true,
-        }),
-      },
-    );
-    const data = await r.json();
-    if (!data.ok) {
-      console.error("TELEGRAM ERROR:", data);
-      return false;
-    }
-    return true;
-  } catch (e) {
-    console.error("TELEGRAM FETCH ERROR:", e);
-    return false;
-  }
-}
 
 export default function Order() {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -109,34 +75,6 @@ export default function Order() {
     return null;
   };
 
-  const buildTelegramText = (orderId, list) => {
-    const itemsText = list
-      .map((i, idx) => {
-        const price = Number(i.price ?? i.newPrice) || 0;
-        return (
-          `${idx + 1}. ${i.name}` +
-          `${i.color ? ` (${i.color})` : ""}` +
-          `${i.size ? `, розмір: ${i.size}` : ""}` +
-          `\n    ${i.quantity} шт. × ${price} грн = ${price * i.quantity} грн`
-        );
-      })
-      .join("\n");
-
-    const number = orderId ? `№${String(orderId).slice(-6).toUpperCase()}` : "";
-
-    return (
-      `🛍 Нове замовлення ${number}\n\n` +
-      `👤 ${name} ${surname}\n` +
-      `📞 ${phone}\n` +
-      `📧 ${email || "—"}\n\n` +
-      `🚚 ${carrier}\n` +
-      `🏙 ${city}\n` +
-      `📦 ${department}\n\n` +
-      `${itemsText}\n\n` +
-      `💰 Всього: ${totalPrice} грн`
-    );
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -172,14 +110,6 @@ export default function Order() {
       if (!orderResponse.ok) {
         throw new Error(orderData.error || "Помилка створення замовлення");
       }
-
-      // Telegram: помилка тут не ламає оформлення замовлення
-      await sendTelegram(
-        buildTelegramText(
-          orderData._id,
-          enrichedItems.length ? enrichedItems : cartItems,
-        ),
-      );
 
       await Promise.all(
         cartItems.map((item) =>
