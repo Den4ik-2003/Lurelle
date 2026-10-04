@@ -84,7 +84,7 @@
   padding: 0.7rem 0.9rem;
   border-radius: 8px;
   border: 1px solid #333;
-  background: #111;
+  background: white;
   color: #000;
   font-size: 0.9rem;
   outline: none;
@@ -123,7 +123,7 @@
   padding: 0.85rem 1rem;
   border-radius: 10px;
   border: 1.5px solid #333;
-  background: #111;
+  background: white;
   cursor: pointer;
   transition:
     border-color 0.2s,
@@ -137,7 +137,7 @@
 
 .order-option.active {
   border-color: var(--color-green);
-  background: #1f1712;
+  background: white;
 }
 
 .order-option-icon {
@@ -251,7 +251,7 @@
   height: 56px;
   border-radius: 8px;
   overflow: hidden;
-  background: #111;
+  background: white;
   flex-shrink: 0;
 }
 
@@ -368,7 +368,7 @@
 .modal2 {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,8 +378,8 @@
 }
 
 .modal-content2 {
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: white;
+  border: 1px solid grey;
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
