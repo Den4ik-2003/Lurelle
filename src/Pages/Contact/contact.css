@@ -90,7 +90,7 @@
 .contact-row-value {
   font-size: 0.92rem;
   font-weight: 500;
-  color: #ccc;
+  color: #C8A27A;
   margin: 0;
   word-break: break-word;
 }
@@ -164,7 +164,7 @@
 .contact-form textarea {
   padding: 12px 14px;
   font-size: 0.9rem;
-  background: #ffeec5;
+  background: #fff2e0;
   border: 1px solid #222;
   border-radius: 8px;
   color: #eee;

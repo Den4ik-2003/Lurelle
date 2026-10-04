@@ -1,10 +1,10 @@
 .lk-page {
   --bg-card-solid: #161717;
-  --bg-input: #1d1f1e;
+  --bg-input: #f2dfc6;
   --border: #2a2c2b;
   --border-soft: #232524;
   --text: #f5f5f5;
-  --text-muted: #000;
+  --text-muted: #9a9c9b;
   --text-faint: #6c6e6d;
   --accent: #C8A27A;
   --danger: #ef4444;
@@ -264,7 +264,7 @@
 }
 .pc-label-cat {
   background: var(--bg-input);
-  color: var(--text-muted);
+  color: var(--text-muted); 
   border: 1px solid var(--border);
 }
 .pc-label-brand {

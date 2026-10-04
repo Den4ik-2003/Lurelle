@@ -146,10 +146,8 @@ export default function Basket() {
           <div className="basket-table">
             <div className="basket-row basket-row--head">
               <span className="col-product">Товар</span>
-              <span className="col-size">Розмір</span>
               <span className="col-qty">Кількість</span>
               <span className="col-sum">Сума</span>
-              <span className="col-del" />
             </div>
 
             {cartProducts.map((item) => (
@@ -171,9 +169,7 @@ export default function Basket() {
                   </div>
                 </div>
 
-                <div className="col-size">
-                  <span className="basket-size-badge">{item.size}</span>
-                </div>
+                
 
                 <div className="col-qty">
                   <div className="basket-quantity">
@@ -198,15 +194,7 @@ export default function Basket() {
                   грн
                 </div>
 
-                <div className="col-del">
-                  <button
-                    className="basket-remove"
-                    onClick={() => removeFromCart(item.id, item.size)}
-                    aria-label="Видалити товар"
-                  >
-                    <img src={TrashIcon} alt="" />
-                  </button>
-                </div>
+                
               </div>
             ))}
 

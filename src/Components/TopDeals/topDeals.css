@@ -1,11 +1,11 @@
 .top-deals {
   --bg-card-solid: #f5e2c8;
   --bg-input: #C8A27A;
-  --border: #ffebd0;
+  --border: #6c6e6d;
   --border-soft: #ffebd0;
   --text: #f5f5f5;
-  --text-muted: #9a9c9b;
-  --text-faint: #C8A27A;
+  --text-muted: #fff;
+  --text-faint: #6c6e6d;
   --accent: #C8A27A;
   --danger: #ef4444;
   --star: #f5b400;

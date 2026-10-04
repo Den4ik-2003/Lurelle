@@ -1,7 +1,14 @@
 .basket2 {
+  --b-block: #f2dfc6;
+  --b-block-border: #e6cca9;
+  --b-line: #c8a27a;
+  --b-muted: #8a6d4f;
+  --b-ink: #3b2a1a;
+  --b-chip: #e6cca9;
+
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  color: #e0e0e0;
+  color: var(--b-ink);
 }
 
 .basket2 h2 {
@@ -23,14 +30,14 @@
 
 .basket-empty2 p {
   margin: 0;
-  color: #aaa;
+  color: var(--b-muted);
   text-align: center;
   font-size: 1.3rem;
 }
 
 .basket-btn2 {
   background: var(--color-green);
-  color: #121212;
+  color: var(--b-ink);
   padding: 0.9rem 2rem;
   border-radius: 10px;
   font-weight: 700;
@@ -53,11 +60,12 @@
 }
 
 .basket-table {
-  background: white;
-  border: 1px solid grey;
+  background: var(--b-block);
+  border: 1px solid var(--b-block-border);
   border-radius: 16px;
   padding: 0.5rem 1.5rem;
   min-width: 0;
+  box-shadow: 0 4px 18px rgba(74, 51, 32, 0.08);
 }
 
 .basket-row {
@@ -71,7 +79,7 @@
   row-gap: 10px;
   column-gap: 12px;
   padding: 1.25rem 0;
-  border-bottom: 1px solid #232524;
+  border-bottom: 1px solid var(--b-line);
 }
 
 .basket-row:last-of-type {
@@ -96,7 +104,7 @@
   height: 64px;
   border-radius: 10px;
   overflow: hidden;
-  background: #1f2120;
+  background: var(--b-chip);
   flex-shrink: 0;
   display: block;
 }
@@ -116,7 +124,7 @@
 }
 
 .basket-row-name {
-  color: #000;
+  color: var(--b-ink);
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
@@ -126,12 +134,12 @@
 }
 
 .basket-row-name:hover {
-  color: var(--color-green);
+  color: #a9743f;
 }
 
 .basket-row-color {
   font-size: 0.78rem;
-  color: #777;
+  color: var(--b-muted);
 }
 
 .col-size {
@@ -147,10 +155,14 @@
   min-width: 36px;
   padding: 4px 10px;
   border-radius: 999px;
-  background: #1f2120;
-  color: #ccc;
+  background: var(--b-chip);
+  color: var(--b-ink);
   font-size: 0.82rem;
   font-weight: 600;
+}
+
+.basket-size-badge:empty {
+  display: none;
 }
 
 .col-qty {
@@ -171,7 +183,7 @@
   border: none;
   border-radius: 50%;
   background-color: var(--color-green);
-  color: #121212;
+  color: var(--b-ink);
   font-weight: bold;
   cursor: pointer;
   display: flex;
@@ -182,14 +194,15 @@
 }
 
 .basket-quantity button:hover {
-  opacity: 0.85;
+  background-color: #a9743f;
+  color: #fff2e0;
 }
 
 .basket-quantity span {
   min-width: 18px;
   text-align: center;
   font-weight: 600;
-  color: #000;
+  color: var(--b-ink);
 }
 
 .col-sum {
@@ -199,7 +212,7 @@
   justify-content: flex-end;
   font-size: 0.92rem;
   font-weight: 700;
-  color: var(--color-green);
+  color: #a9743f;
 }
 
 .col-del {
@@ -223,7 +236,7 @@
 }
 
 .basket-remove:hover {
-  background: rgba(255, 77, 77, 0.12);
+  background: rgba(181, 55, 43, 0.12);
 }
 
 .basket-remove img {
@@ -236,7 +249,7 @@
   margin: 1rem 0 0.5rem;
   background: none;
   border: none;
-  color: #777;
+  color: var(--b-muted);
   font-size: 0.85rem;
   cursor: pointer;
   padding: 0;
@@ -244,26 +257,27 @@
 }
 
 .basket-clear-link:hover {
-  color: #ff4d4d;
+  color: #b5372b;
 }
 
 .basket-summary {
   position: sticky;
   top: 24px;
-  background: white;
-  border: 1px solid grey;
+  background: var(--b-block);
+  border: 1px solid var(--b-block-border);
   border-radius: 16px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 14px;
+  box-shadow: 0 4px 18px rgba(74, 51, 32, 0.08);
 }
 
 .basket-summary h3 {
   margin: 0 0 4px;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #000;
+  color: var(--b-ink);
 }
 
 .basket-summary-row {
@@ -272,7 +286,7 @@
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
-  color: #999;
+  color: var(--b-muted);
 }
 
 .basket-summary-free {
@@ -287,21 +301,21 @@
   gap: 10px;
   padding-top: 12px;
   margin-top: 4px;
-  border-top: 1px solid #232524;
+  border-top: 1px solid var(--b-line);
   font-size: 0.95rem;
-  color: #ccc;
+  color: var(--b-muted);
 }
 
 .basket-summary-total strong {
   font-size: 1.45rem;
-  color: var(--color-green);
+  color: #a9743f;
   white-space: nowrap;
 }
 
 .basket-buy-btn {
   margin-top: 6px;
   background: var(--color-green);
-  color: #121212;
+  color: var(--b-ink);
   padding: 0.85rem 1rem;
   border-radius: 10px;
   font-weight: 700;
@@ -312,12 +326,13 @@
 }
 
 .basket-buy-btn:hover {
-  opacity: 0.88;
+  background: #a9743f;
+  color: #fff2e0;
 }
 
 .basket-continue-link {
   text-align: center;
-  color: var(--color-green);
+  color: #000;
   font-size: 0.85rem;
   text-decoration: none;
 }
@@ -342,7 +357,7 @@
   .basket-row--head {
     display: grid;
     padding: 0 0 0.9rem;
-    color: #777;
+    color: var(--b-muted);
     font-size: 0.78rem;
     font-weight: 600;
   }
