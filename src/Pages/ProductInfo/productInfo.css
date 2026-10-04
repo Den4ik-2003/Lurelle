@@ -283,7 +283,7 @@
 .pi-qty-btn {
   width: 36px;
   height: 36px;
-  background: #1e1e1e;
+  background: #C8A27A;
   border: none;
   color: #ccc;
   font-size: 1.2rem;
@@ -308,8 +308,8 @@
   min-width: 38px;
   text-align: center;
   font-size: 0.95rem;
-  color: #000;
-  background: #161616;
+  color: white;
+  background: #C8A27A;
   line-height: 36px;
 }
 
